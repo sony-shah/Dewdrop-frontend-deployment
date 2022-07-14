@@ -1,0 +1,139 @@
+.c-leaderboard {
+    > div {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #111;
+            padding: 10px 15px;   
+
+            
+
+            &:first-child {
+                background-color: $blueclr;
+                h4,p,
+                h3 {
+                    color: #FFF;
+                    a{color: #FFF !important;}
+                }
+                h2 {
+                    color: $mcolor;
+                    a{color: $mcolor;}
+                }
+            }
+            &:nth-child(2) {
+                background-color: $lpclr;
+                h2 {
+                    color: $blueclr;
+                    a{ color: $blueclr;}
+                }
+            }
+            &:nth-child(3) {
+                background-color: $pclr;
+                h2 {
+                    color: $blueclr;
+                    a{
+                        color: $blueclr; 
+                    }
+                }
+            }
+
+          
+            
+
+            .partnerDetails {
+                display: flex;
+                align-items: center;
+                .partnerPic {
+                    width: 84px;
+                    margin-right: 20px;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    height: 84px;
+                    img{
+                        width: 100%;
+
+                    }
+
+                    @include breakpoint(mobileonly){
+                      width: 60px;
+                      height: 60px;
+                    }
+                }
+               
+                .nameDetails{
+                    display: block;
+                    h4{
+                        font-family: $forum;
+                        font-size: 24px;
+                        a{
+                            color: $bodyclr;
+                            text-decoration: none;
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+
+                        @include breakpoint(mobileonly){
+                            display: none;
+                        }
+
+                }
+            }
+            .contentDetails {
+                width: calc(100% - 500px);
+                
+                @include breakpoint(mobileonly){
+                    width: 100%;
+                }
+            }
+            .partnerDetails {
+                width: 300px;
+
+                @include breakpoint(mobileonly){
+                    width: auto;
+                }
+            }
+            .points {
+                width: 180px;
+            }
+            h2 {
+                font-size: 100px;
+                font-weight: 900;
+                text-align: right;
+
+                @include breakpoint(tablet){
+                    font-size: 76px;
+                } 
+                @include breakpoint(mobileonly){
+                    font-size: 30px;
+                    margin-left: 10px;
+                } 
+            }
+            h3 {
+                font-size: 36px;
+                font-family: $forum;
+                a{text-decoration: none; color:#000; }
+                @include breakpoint(tablet){
+                    font-size: 30px;
+                } 
+                @include breakpoint(mobileonly){
+                    font-size: 16px;
+
+                   
+                } 
+            }
+        }
+
+
+    }
+}

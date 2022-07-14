@@ -1,0 +1,73 @@
+.c-enquiry{
+    .error{
+        color: red;
+    }
+    .success{
+        color: green;
+        font-size: 30px;
+    }
+    > div{
+        background-color: $greyclr;
+        padding: 20px 15px;
+        box-sizing: border-box;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        @include breakpoint(mobileonly){
+            flex-direction: column;
+        }
+        li{
+            width: calc(25% - 40px);
+            @include breakpoint(mobileonly){
+                width: 100%;
+               margin-bottom: 15px;
+               &:last-child{
+                   margin-bottom: 0;
+               }
+              
+          }
+            input{
+                width: 100%;
+                line-height: 20px;
+                padding: 15px 15px;
+                border-radius: 25px;
+                background-color: #FFF;
+                border:0px;
+                outline: none;
+
+                @include breakpoint(mobileonly){
+                    box-sizing: border-box;
+                }
+                }
+            button{
+                width: 100%;
+                line-height: 20px;
+                padding: 15px 15px;
+                border-radius: 25px;
+                background-color: $mcolor;
+                border:0px;
+                outline: none;
+                color: #FFF;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+        // @include breakpoint(mobileonly){
+            
+           
+           
+            
+        //     li{
+        //         width: 100%;
+        //         margin-bottom: 15px;
+
+        //     }
+    
+        //  }
+       
+    }
+   
+}

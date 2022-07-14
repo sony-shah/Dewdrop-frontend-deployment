@@ -1,0 +1,38 @@
+.m-footer {
+    background-color: $bodyclr;
+    ul{
+        display: flex;
+        justify-content: space-between;
+
+       
+
+    }
+    h6{
+        color: $pclr;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    a{
+        color: #FFF;
+        text-decoration: none;
+        &:after{
+            content:"|";
+            margin: 0 10px;
+        }
+        &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+    }
+    @include breakpoint(mobileonly){
+        ul{
+            flex-direction: column;
+            li{
+                margin-bottom: 25px;
+               
+            }
+        }
+    }
+    
+}

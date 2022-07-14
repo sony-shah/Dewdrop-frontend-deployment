@@ -1,0 +1,165 @@
+.c-aboutus{
+
+  .sectionHeading{
+
+      h3{
+          color: $darkblueclr;
+          span{color: $mcolor;}
+
+          @include breakpoint(tablet){
+              font-size: 54px;
+          }
+
+          @include breakpoint(mobileonly){
+              font-size: 30px;
+          }
+        
+      }
+
+      h5{
+        @include breakpoint(tablet){
+            font-size: 30px;
+        }
+    }
+     
+  }
+
+  p{
+        font-size: 24px;
+        line-height: 28px;
+
+      @include breakpoint(mobileonly){
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 14px;
+        text-align: justify;
+
+      }
+      
+  }
+     
+    >div{
+        margin-top: 50px;
+
+    }
+
+    
+
+}
+
+
+
+// guidelines
+
+.guidelines
+{
+
+    //  process img start here
+    .process{
+
+        h5{
+            font-size: 36px;
+            color:  $mcolor;
+            font-weight: 300;
+            margin-bottom: 30px;   
+            font-family: $forum;     
+            
+            @include breakpoint(tablet){
+                font-size: 30px;
+            }
+
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+
+            @include breakpoint(mobileonly){
+                flex-direction: column;
+            }
+            li{
+                border: 1px solid ;
+              
+               text-align: center;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               padding: 75px 60px;   
+                cursor: pointer;
+
+               @include breakpoint(tablet){
+                padding: 30px 10px;
+               }
+               .processimg{
+                   height: 100px;
+                   display: inline-block;
+                   margin-bottom: 20px;
+                   
+               }
+              
+                h4{
+                    font-size: 32px;
+                    margin-bottom: 20px;
+                   font-family: $forum;
+                }
+                p{
+                    font-size: 18px;
+                    
+                }
+            
+              
+            }
+        }
+
+    }
+  //  process img start here
+
+
+    // guideline content start here
+    .guidelineContent{
+        h2{
+            font-size: 36px;
+            color:  $mcolor;
+            font-weight: 300;
+            margin: 95px 0px 30px 0px;  
+            font-family: $forum;   
+            
+            @include breakpoint(tablet){
+                font-size: 30px;
+            }
+            @include breakpoint(mobileonly){
+                margin: 50px 0px 30px 0px; 
+            }
+        }
+        ul{
+            margin-left: 30px;
+
+            @include breakpoint(mobileonly){
+                margin-left: 25px;
+            }
+            li{
+                font-size: 22px;
+                list-style-type: disc;
+             
+                margin-bottom: 10px;
+                padding-left: 20px;
+
+                @include breakpoint(mobileonly){
+                    font-size: 14px;
+                    padding-left: 15px;
+                }
+            }
+        }
+
+    }
+    .uperfooterimg{
+        // margin-top: 100px;
+        margin: 100px 0px 100px 0px;
+
+        @include breakpoint(mobileonly){
+            margin: 80px 0px 30px 0px;
+        }
+        @include breakpoint(tablet){
+            margin: 80px 0px 50px 0px;
+        }
+    }
+}

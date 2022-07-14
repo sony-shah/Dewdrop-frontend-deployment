@@ -1,0 +1,52 @@
+.c-topbanner{
+    @include breakpoint (mobileonly){
+        padding-top: 50px;
+        
+    } 
+    .topbannerSlide{
+        position: relative;
+        @include breakpoint (mobileonly){
+            margin-top: 20px;
+            
+        }
+        video{
+            width: 100%;
+        }
+        .contentdiv{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            text-align: center;
+            color: #FFF;
+
+            h2{
+                font-size: 100px;
+                font-weight: 900;
+            
+                @include breakpoint(tablet){
+                    font-size: 76px;
+                }
+                @include breakpoint(mobileonly) {
+                    font-size: 36px;
+                }
+
+               
+            }
+            h4{
+                font-size: 48px;
+                font-family: $forum;
+
+                @include breakpoint(tablet){
+                    font-size: 36px;
+                }
+                @include breakpoint(mobileonly){
+                    font-size: 24px;
+                }
+                
+            }
+           
+        }
+    }
+   
+}

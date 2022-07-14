@@ -1,0 +1,29 @@
+.c-dewdrop{
+    // background-image: url("../../public/dewdrop.jpg");
+
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+    justify-content: flex-start;
+ 
+        > div{
+            // max-width: 500px;
+            > div{
+                width: 550px;
+                margin-bottom: 100px;
+                
+                p{
+                    line-height: 24px;
+                    // color: #fff;
+                }
+                @include breakpoint(tablet){
+                    width: 70%;
+                }
+                @include breakpoint(mobileonly){
+                width: 100%;
+                }
+            }
+        }
+    
+
+}

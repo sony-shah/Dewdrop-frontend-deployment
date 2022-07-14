@@ -1,0 +1,344 @@
+// lp profile start here
+.p-profile {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    &.con-row{
+        padding: 50px 0px;
+        @include breakpoint(mobileonly){
+           padding-bottom: 30px;
+        }
+    }
+   
+
+    &.profile-banner{
+        height: 90vh;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-top: 72px;
+
+        @include breakpoint(mobileonly){
+            height: auto;
+            padding-top: 100px;
+        }
+    }
+
+    &.bgColor{
+       background-color: #d0e5ec;
+       margin: 50px 0;
+       padding: 100px 0;
+       @include breakpoint(mobileonly){
+        margin: 20px 0;
+       padding: 40px 0;
+    }
+
+      
+       
+    }
+    // background-image: url("../../public/universalbg.png");
+    .sectionHeading{
+        width: 100%;
+        h3{
+            text-align: left !important;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        @include breakpoint(mobileonly) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        
+        
+
+        .profileDetails {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            @include breakpoint(mobileonly) {
+                width: 100%;
+                order: 2;
+            }
+
+            .businesslogo{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                background-color: #FFF;
+                img{
+                    width: 100%;
+                }
+            }
+
+            span {
+                background-color: burlywood;
+                // background-image: url("../../public/propic.png");
+                background-repeat: no-repeat;
+                background-size: 150px;
+                background-position: center;
+                display: flex;
+                width: 145px;
+                height: 145px;
+                border-radius: 50%;
+                @include breakpoint(mobileonly) {
+                    width: 50px;
+                    height: 50px;
+                    // order: 2;
+                }
+            }
+            h4 {
+                font-size: 30px;
+                margin-top: 6px;
+                font-family: $forum;
+                color: #fff;
+                text-transform: capitalize;
+                @include breakpoint(mobileonly){
+                    font-size: 26px;
+                    margin-top: 4px;
+                    
+                }
+                // background-color: cadetblue;
+            }
+            h1 {
+                font-size: 72px;
+                margin-top: 50px;
+                color: #fff;
+                @include breakpoint(mobileonly) {
+                    font-size: 30px;
+                    margin-top: 40px;
+                    
+                }
+            }
+            h3 {
+                font-size: 24px;
+                color: $mcolor;
+                margin-top: 8px;
+                margin-bottom: 40px;
+                font-family: $forum;
+                text-transform: capitalize;
+                @include breakpoint(mobileonly){
+                    font-size: 22px;
+                    margin-top: 4px;
+                    margin-bottom: 30px;
+                }
+            }
+            h2 {
+                font-size: 18px;
+                color: $bscategory;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 18px;
+                text-align: left;
+                color: #fff;
+                line-height: 22px;
+                @include breakpoint(mobileonly){
+                    margin-bottom: 40px;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .profileImg {
+            // display: flex;
+            text-align: center;
+
+            // width: 500px;
+            //     height: 500px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                background-color: #FFF;
+                border: 5px solid #d7e9ff;
+                max-width: 500px;
+                height: 500px;
+                img{
+                    width: 100%;
+                }
+
+            @include breakpoint(mobileonly) {
+                width: 100%;
+                height: auto;
+                // order: 2;
+            }
+            span {
+                width: 500px;
+                height: 500px;
+            }
+
+            // span{
+            //     background-color: burlywood;
+            //     // background-image: url("../../public/propic.png");
+            //     background-repeat: no-repeat;
+            //     background-size: 500px ;
+            //     background-position: center;
+            //     display: block;
+            //     width: 500px;
+            //     height: 500px;
+            //     border-radius:250px;
+
+            // }
+        }
+    }
+
+    //OurUsp Start here
+    &.ourusp {
+        background-image: none;
+        @include breakpoint(mobileonly){
+            padding-top: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .businessvideo {
+                width: 100%;
+                max-width: 600px;
+            }
+            @include breakpoint(mobileonly) {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+        }
+        .uspDetails {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            @include breakpoint(mobileonly){
+                width: 100%;
+            }
+
+            .sectionHeading {
+                margin-bottom: 24px;
+                @include breakpoint(mobileonly){
+                    margin-bottom: 12px;
+                }
+            }
+            ul {
+                li {
+                    margin-bottom: 14px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    
+
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .usp-content{
+                line-height: 20px;
+                text-align: justify;
+                @include breakpoint(mobileonly){
+                    margin-bottom: 18px;
+                }
+              
+                
+            }
+        }
+        .businessvideo {
+            width: 50%;
+            display: inline-block;
+            justify-content: space-between;
+        }
+    }
+
+    // service start from here
+    &.services-products {
+        background-image: none;
+        .container {
+            display: flex;
+            flex-direction: column;
+            
+            .sectionHeading{
+              @include breakpoint(mobileonly){
+                  margin-bottom: 0;
+              }
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            column-gap: 25px;
+            width: 100%;
+            flex-wrap: wrap; 
+            @include breakpoint(mobileonly) {
+                flex-direction: column;
+                // row-gap: 25px;
+            }
+
+            li {
+                width: calc(25% - 20px);
+                &:hover{
+                    img{
+                        transform: scale(1.2);
+                    }
+                }
+                .profile-content-card{
+                    overflow: hidden;
+                    line-height: 0px;
+                    border: 1px solid #CCC;
+                    
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 20px;
+                    box-sizing: border-box;
+                    li{
+                        width: 100%;
+                        list-style-type: disc;
+                    }
+                }
+                @include breakpoint(mobileonly) {
+                    width: 100%;    
+                }
+                img{
+                    width: 100%;
+                    @extend .anim;
+                }
+                h4 {
+                    margin: 20px 0px 10px 0px;
+                    font-size: 30px;
+                    font-family: $forum;
+                    @include breakpoint(mobileonly) {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    font-family: $mukta;
+                    line-height: 24px;
+                    @include breakpoint(mobileonly){
+                        line-height: 22px;
+                    }
+                }
+            }
+            .list-contentcard{
+                margin-bottom: 40px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+            }
+           
+        }
+       
+        
+    }
+}

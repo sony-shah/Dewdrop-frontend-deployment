@@ -1,0 +1,199 @@
+// import font from gooogle fonts (mukta and forum)
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+    font-family: $mukta;
+    // @include breakpoint(mobileonly){
+    //     padding-top: 50px;
+
+    // }
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    // @include breakpoint(mobileonly){
+    //     width: 0;
+    // }
+    @include breakpoint(tablet){
+        // width: 100%;
+       max-width: 1024px;
+       padding: 0 30px;
+       width: auto;
+    }
+
+    @include breakpoint(mobileonly){
+        // width: 100%;
+       max-width: 480px;
+       width: auto;
+       padding: 0 20px;
+  
+
+    }
+
+}
+
+.sectionHeading {
+    font-size: 72px;
+    margin-bottom: 50px;
+    font-weight: 800;
+
+    @include breakpoint(tablet) {
+	
+        margin-bottom: 35px;
+        h2{
+            font-size: 76px;
+        }
+
+	}
+    @include breakpoint(mobileonly) {
+		
+        margin-bottom: 25px;
+        h2{
+            font-size: 34px;
+        }
+        
+	}
+     h5{
+        font-size: 36px;
+        color:  $mcolor;
+        font-weight: 300;
+        margin-bottom: 30px;   
+        font-family: $forum;
+    
+    }
+    h3{
+        font-size: 72px;
+        
+        @include breakpoint(mobileonly){
+            font-size: 34px;
+        }
+    }
+    
+  
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+.anim {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.anim1 {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.con-row {
+    padding: 100px 0;
+
+    @include breakpoint(tablet){
+        padding: 76px 0;
+    }
+    @include breakpoint(mobileonly){
+        padding: 50px 0;
+    }
+}
+
+.ctaLink {
+    font-family: $forum;
+    padding: 15px 100px;
+    line-height: 20px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    @include breakpoint(mobileonly){
+        line-height: 15px;
+        padding: 15px 90px;
+        font-size: 28px;
+       
+    }
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loadingScreen{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    z-index: 999;
+
+    p{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.loader2 {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+    
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+.slider{
+    background-color: #000;
+}
+.swal2-container{
+  
+    .swal2-actions{
+
+        .swal2-loader{
+                &:active
+        {
+            border: none;
+         
+        }
+        }
+        button{
+            background-color: coral;
+            border: 1px solid coral;
+          
+           
+
+        }
+     
+ 
+    }
+}

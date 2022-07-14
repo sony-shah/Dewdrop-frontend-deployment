@@ -1,0 +1,120 @@
+// client logo start here
+
+.c-clientlogo{
+
+    &.con-row{
+        padding: 50px 0px;
+    }
+
+    .slick-slide{
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        img{
+            width: 100%;
+        }
+    }
+    .slick-slider{
+        display: none;
+        @include breakpoint(phablet){
+            display: block;
+            }
+
+            .slick-dots{
+               
+                @include breakpoint(mobileonly){
+                    display: flex !important;
+                    justify-content: center;
+                }
+                button:before{
+                    // width: 20px;
+                    // height: 20px;
+                    opacity: 1;
+                    font-size: 14px;
+                    color: #072c50;
+                }
+                li.slick-active button:before{
+                    opacity: 1 ;
+                    // color: #072c50;
+                    color: #fe6f06;
+                    
+                    // #fe6f06
+                  
+                    // &::after{
+                      
+                    // }
+                }
+            }
+           
+    }
+    .sickslider{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 0;
+        column-gap: 20px;
+        // opacity: 0.7;
+        // display: none;
+        
+        &:hover{
+            opacity: 1;
+            img{
+                filter: grayscale(0);
+            }
+        }
+        img{
+                width: 100%;
+                filter: grayscale(100%);
+                @extend .anim;
+                @include breakpoint(phablet){
+                    filter: grayscale(0%); 
+                    opacity: 1;
+                }
+            }
+        
+    }
+
+   .container > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // background-color: darkgray;
+        padding: 20px 0;
+        column-gap: 20px;
+        @include breakpoint(phablet){
+            // flex-wrap: wrap;
+            row-gap: 30px;
+            display: none;
+            }
+        li{
+        
+            width: calc(20% - 20px);
+            display: flex;
+            flex-direction: column;
+            opacity: 0.7;
+            @extend .anim;
+            cursor: pointer;
+            &:hover{
+                opacity: 1;
+                img{
+                    filter: grayscale(0);
+                }
+            }
+            img{
+                width: 100%;
+                filter: grayscale(100%);
+                @extend .anim;
+                @include breakpoint(phablet){
+                    filter: grayscale(0%); 
+                }
+            }
+            @include breakpoint(mobileonly){
+                row-gap: 30px;
+                width: calc(50% - 15px);
+                }
+            // justify-content: space-between;
+            // padding: 75px 60px;
+        }
+    }
+
+}
